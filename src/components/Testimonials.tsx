@@ -12,11 +12,11 @@ const testimonials = [
 ];
 
 const colors = [
-  "from-blue-900/50 to-blue-800/30",
-  "from-teal-900/50 to-teal-800/30",
-  "from-purple-900/50 to-purple-800/30",
+  "from-red-950/60 to-red-900/30",
   "from-slate-800/50 to-slate-700/30",
-  "from-indigo-900/50 to-indigo-800/30",
+  "from-red-950/40 to-slate-800/30",
+  "from-neutral-800/50 to-neutral-700/30",
+  "from-red-950/50 to-neutral-800/30",
 ];
 
 export default function Testimonials() {

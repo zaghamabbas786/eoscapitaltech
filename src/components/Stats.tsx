@@ -28,7 +28,7 @@ export default function Stats() {
               transition={{ delay: i * 0.12, duration: 0.5 }}
               className={`rounded-2xl p-8 text-center ${
                 stat.highlighted
-                  ? "bg-gradient-to-br from-accent/30 to-accent/10 border border-accent/30"
+                  ? "bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/30"
                   : "glass-card"
               }`}
             >

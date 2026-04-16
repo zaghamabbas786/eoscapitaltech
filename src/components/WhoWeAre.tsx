@@ -24,8 +24,8 @@ export default function WhoWeAre() {
           transition={{ duration: 0.6 }}
           className="mb-16 max-w-3xl"
         >
-          <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/5 px-4 py-1.5 text-xs font-medium tracking-wider text-accent uppercase">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+          <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/5 px-4 py-1.5 text-xs font-medium tracking-wider text-accent-light uppercase">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent-light" />
             Who We Are
           </span>
 

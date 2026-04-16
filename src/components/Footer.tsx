@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = {
   Product: [
@@ -28,13 +29,7 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Link href="#" className="mb-4 flex items-center gap-2.5">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent/20">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <rect x="3" y="3" width="7" height="18" rx="1" stroke="#3B82F6" strokeWidth="2" />
-                  <rect x="14" y="8" width="7" height="13" rx="1" stroke="#3B82F6" strokeWidth="2" />
-                  <rect x="14" y="3" width="7" height="3" rx="1" fill="#3B82F6" />
-                </svg>
-              </div>
+              <Image src="/logo.png" alt="EOS Capital Tech" width={36} height={36} className="rounded-lg" />
               <span className="text-lg font-semibold tracking-tight">
                 EOS Capital Tech
               </span>

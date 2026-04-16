@@ -70,9 +70,9 @@ export default function Guarantee() {
           >
             <div className="flex h-56 w-56 items-center justify-center">
               <div className="relative">
-                <div className="absolute inset-0 rounded-[40%] bg-gradient-to-b from-white/10 to-white/5 blur-md" />
-                <div className="relative flex h-48 w-48 flex-col items-center justify-center rounded-[40%] border border-white/20 bg-gradient-to-b from-slate-400/30 to-slate-600/20 backdrop-blur-sm">
-                  <CheckCircle size={28} className="mb-2 text-white/80" />
+                <div className="absolute inset-0 rounded-[40%] bg-gradient-to-b from-accent/20 to-white/5 blur-md" />
+                <div className="relative flex h-48 w-48 flex-col items-center justify-center rounded-[40%] border border-accent/30 bg-gradient-to-b from-accent/10 to-slate-900/60 backdrop-blur-sm">
+                  <CheckCircle size={28} className="mb-2 text-accent" />
                   <p className="text-center text-sm font-bold uppercase tracking-wider text-white/90">
                     EOS Capital
                   </p>

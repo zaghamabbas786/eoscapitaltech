@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -14,13 +15,15 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-10 flex h-24 w-24 items-center justify-center rounded-2xl border border-accent/20 bg-accent/10 shadow-lg shadow-accent/10"
+          className="mx-auto mb-10"
         >
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-            <rect x="3" y="3" width="7" height="18" rx="1" stroke="#3B82F6" strokeWidth="1.5" />
-            <rect x="14" y="8" width="7" height="13" rx="1" stroke="#3B82F6" strokeWidth="1.5" />
-            <rect x="14" y="3" width="7" height="3" rx="1" fill="#3B82F6" />
-          </svg>
+          <Image
+            src="/logo.png"
+            alt="EOS Capital Tech"
+            width={96}
+            height={96}
+            className="mx-auto rounded-2xl"
+          />
         </motion.div>
 
         <motion.h1
@@ -62,7 +65,7 @@ export default function Hero() {
             href="#products"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-shadow hover:shadow-xl hover:shadow-accent/30"
+            className="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all hover:bg-accent-light hover:shadow-xl hover:shadow-accent/30"
           >
             See Demo
           </motion.a>
