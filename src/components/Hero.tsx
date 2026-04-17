@@ -29,6 +29,8 @@ export default function Hero() {
             alt="Eos Capital Tech"
             width={96}
             height={96}
+            loading="eager"
+            priority
             className="mx-auto rounded-2xl"
           />
         </motion.div>
