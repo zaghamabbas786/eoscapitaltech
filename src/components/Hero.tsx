@@ -3,6 +3,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const trustBadges = [
+  { name: "Business Insider", url: "https://markets.businessinsider.com/news/stocks/eos-capital-technologies-unveils-innovative-solutions-to-empower-retail-traders-in-financial-markets-1033870673" },
+  { name: "Morningstar", url: "https://www.morningstar.com/news/globe-newswire/9259925/eos-capital-technologies-unveils-innovative-solutions-to-empower-retail-traders-in-financial-markets" },
+  { name: "Benzinga", url: "https://www.benzinga.com/pressreleases/24/10/g41451361/eos-capital-technologies-unveils-innovative-solutions-to-empower-retail-traders-in-financial-marke" },
+  { name: "Yahoo Finance", url: "https://finance.yahoo.com/news/eos-capital-technologies-unveils-innovative-125600869.html" },
+];
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
@@ -19,7 +26,7 @@ export default function Hero() {
         >
           <Image
             src="/logo.png"
-            alt="EOS Capital Tech"
+            alt="Eos Capital Tech"
             width={96}
             height={96}
             className="mx-auto rounded-2xl"
@@ -32,8 +39,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="mb-6 text-4xl font-bold leading-[1.15] tracking-tight md:text-6xl lg:text-7xl"
         >
-          The AI Trading Edge You&apos;ve Been{" "}
-          <span className="gradient-text">Searching For</span>
+          Prop Firm Automation,{" "}
+          <span className="gradient-text">Engineered For You.</span>
         </motion.h1>
 
         <motion.p
@@ -42,9 +49,9 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="mx-auto mb-10 max-w-2xl text-lg text-muted"
         >
-          Six years and <strong className="text-foreground">$2M in R&D</strong>{" "}
-          engineered into the definitive algorithmic software for passing
-          challenges and scaling prop firm funding.
+          We build, code, and deploy professional trading systems in MQL4 &
+          MQL5 — designed to trade your funded accounts on autopilot with
+          institutional-grade risk management.
         </motion.p>
 
         <motion.div
@@ -54,20 +61,20 @@ export default function Hero() {
           className="flex flex-wrap justify-center gap-4"
         >
           <motion.a
-            href="#about"
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-            className="inline-flex items-center gap-2 rounded-full border border-card-border px-8 py-3.5 text-sm font-semibold transition-colors hover:border-accent/50 hover:bg-card-bg"
-          >
-            Join Community
-          </motion.a>
-          <motion.a
-            href="#products"
+            href="#book"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all hover:bg-accent-light hover:shadow-xl hover:shadow-accent/30"
           >
-            See Demo
+            Book a Strategy Call
+          </motion.a>
+          <motion.a
+            href="#solutions"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+            className="inline-flex items-center gap-2 rounded-full border border-card-border px-8 py-3.5 text-sm font-semibold transition-colors hover:border-accent/50 hover:bg-card-bg"
+          >
+            Explore Solutions
           </motion.a>
         </motion.div>
 
@@ -75,18 +82,23 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
-          className="mt-14 flex items-center justify-center gap-8"
+          className="mt-14"
         >
-          <div className="font-mono text-xl font-bold tracking-tight text-muted/60">
-            Inc. 5000
-          </div>
-          <div className="h-6 w-px bg-card-border" />
-          <div className="font-mono text-sm tracking-wider text-muted/60">
-            barchart
-          </div>
-          <div className="h-6 w-px bg-card-border" />
-          <div className="font-mono text-sm tracking-wider text-muted/60">
-            FINSMES
+          <p className="mb-5 text-xs tracking-widest text-muted/50 uppercase">
+            As Featured In
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-8">
+            {trustBadges.map((badge) => (
+              <a
+                key={badge.name}
+                href={badge.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-sm tracking-wider text-muted/40 transition-all hover:text-muted/70"
+              >
+                {badge.name}
+              </a>
+            ))}
           </div>
         </motion.div>
       </div>

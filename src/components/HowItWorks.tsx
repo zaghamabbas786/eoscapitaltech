@@ -2,55 +2,50 @@
 
 import { motion } from "framer-motion";
 import {
-  ShoppingCart,
+  Phone,
+  Trophy,
   Cpu,
   Wallet,
   TrendingUp,
-  Repeat,
 } from "lucide-react";
 
 const steps = [
   {
     num: "01",
-    icon: ShoppingCart,
-    title: "Purchase Prop Firm Challenge",
-    desc: "Choose your account size and start your evaluation with any prop firm.",
-    mockup: {
-      header: "Prop Firm Challenge",
-      items: ["$50,000", "$100,000", "$150,000"],
-    },
+    icon: Phone,
+    title: "Apply & Consult",
+    desc: "Book a strategy call. We review your goals, recommend the right prop firm and system, and map the setup to your requirements.",
   },
   {
     num: "02",
-    icon: Cpu,
-    title: "Pass Challenges Using Titan X",
-    desc: "Use structured settings of our system designed to help you pass challenges.",
+    icon: Trophy,
+    title: "We Pass Your Challenge",
+    desc: "Our professional trading team passes your prop firm challenge within the firm's rules. You don't place a single trade.",
     mockup: {
-      header: "Enter The Challenge",
       checks: [
-        { label: "Daily Drawdown", status: "Within Limit", color: "accent-green" },
-        { label: "Max Risk Per Trade", status: "Controlled", color: "accent-green" },
-        { label: "Trade Frequency", status: "Evaluating", color: "muted" },
+        { label: "Daily Drawdown", status: "Within Limit" },
+        { label: "Profit Target", status: "On Track" },
+        { label: "Consistency Rule", status: "Passed" },
       ],
     },
   },
   {
     num: "03",
-    icon: Wallet,
-    title: "Get Funded & Start Trading",
-    desc: "Once you pass, your funded account goes live with our automated system.",
+    icon: Cpu,
+    title: "Automation Deployed",
+    desc: "Once funded, we install our proprietary systems on your account, configure settings to your firm's ruleset, and deploy to a low-latency VPS.",
   },
   {
     num: "04",
-    icon: TrendingUp,
-    title: "Grow & Scale Capital",
-    desc: "Compound your gains and scale into larger accounts with proven strategies.",
+    icon: Wallet,
+    title: "You Collect Payouts",
+    desc: "Your funded account trades automatically. You keep up to 80% of the profits. Zero screen time required.",
   },
   {
     num: "05",
-    icon: Repeat,
-    title: "Repeat the Cycle",
-    desc: "Use profits to fund new challenges and continuously scale your portfolio.",
+    icon: TrendingUp,
+    title: "Scale Your Portfolio",
+    desc: "Use profits to fund additional accounts and compound. Most clients scale to 2–4 funded accounts within their first 6 months.",
   },
 ];
 
@@ -67,11 +62,14 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
+          <span className="mb-4 block text-xs font-semibold tracking-[0.25em] text-accent uppercase">
+            How It Works
+          </span>
           <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
-            The Prop Farming Roadmap
+            From Strategy to Live Automation
           </h2>
           <p className="mx-auto max-w-lg text-muted">
-            The path to your first funded account
+            Five steps from your application to a fully automated funded account.
           </p>
         </motion.div>
 
@@ -92,49 +90,21 @@ export default function HowItWorks() {
               <p className="mb-5 text-sm leading-relaxed text-muted">
                 {step.desc}
               </p>
-
-              {step.mockup && "items" in step.mockup && step.mockup.items && (
+              {step.mockup && (
                 <div className="rounded-xl border border-card-border bg-background/60 p-4">
                   <div className="mb-3 flex items-center gap-2 text-xs font-medium">
                     <span className="flex h-5 w-5 items-center justify-center rounded bg-accent/20 text-accent">
                       <step.icon size={12} />
                     </span>
-                    {step.mockup.header}
-                  </div>
-                  <div className="mb-2 flex items-center justify-between text-xs text-muted">
-                    <span>Choose account size</span>
-                    <span>1/3 ○</span>
-                  </div>
-                  {step.mockup.items!.map((item, j) => (
-                    <div
-                      key={item}
-                      className={`flex items-center justify-between border-b border-card-border/50 py-2 text-sm ${j === 0 ? "text-foreground" : "text-muted"}`}
-                    >
-                      <span>{item}</span>
-                      <span className={`h-3 w-3 rounded-full border ${j === 0 ? "border-accent bg-accent" : "border-card-border"}`} />
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              {step.mockup && "checks" in step.mockup && step.mockup.checks && (
-                <div className="rounded-xl border border-card-border bg-background/60 p-4">
-                  <div className="mb-3 flex items-center gap-2 text-xs font-medium">
-                    <span className="flex h-5 w-5 items-center justify-center rounded bg-accent/20 text-accent">
-                      <step.icon size={12} />
-                    </span>
-                    {step.mockup.header}
+                    Challenge Progress
                   </div>
                   {step.mockup.checks.map((check) => (
-                    <div
-                      key={check.label}
-                      className="flex items-center justify-between border-b border-card-border/50 py-2.5"
-                    >
+                    <div key={check.label} className="flex items-center justify-between border-b border-card-border/50 py-2.5">
                       <div className="flex items-center gap-2 text-xs">
-                        <span className={`text-${check.color}`}>✓</span>
+                        <span className="text-accent-green">✓</span>
                         {check.label}
                       </div>
-                      <span className={`text-xs font-medium text-${check.color}`}>
+                      <span className="text-xs font-medium text-accent-green">
                         {check.status}
                       </span>
                     </div>
@@ -159,12 +129,8 @@ export default function HowItWorks() {
                     {step.num}
                   </span>
                   <div>
-                    <h3 className="mb-1 text-base font-semibold">
-                      {step.title}
-                    </h3>
-                    <p className="text-sm leading-relaxed text-muted">
-                      {step.desc}
-                    </p>
+                    <h3 className="mb-1 text-base font-semibold">{step.title}</h3>
+                    <p className="text-sm leading-relaxed text-muted">{step.desc}</p>
                   </div>
                 </div>
               </motion.div>

@@ -3,15 +3,15 @@
 import { motion } from "framer-motion";
 
 const markets = [
-  { name: "Gold", since: "Since Sept 2023", gain: "+746.86%" },
-  { name: "Forex", since: "Since May 2020", gain: "+619.03%" },
-  { name: "Indices", since: "Since Sept 2023", gain: "+39.45%" },
-  { name: "Bitcoin", since: "Since Oct 2023", gain: "+51.82%" },
+  { name: "Gold", since: "Since Sept 2023" },
+  { name: "Forex", since: "Since May 2020" },
+  { name: "Indices", since: "Since Sept 2023" },
+  { name: "Crypto", since: "Since Oct 2023" },
 ];
 
 export default function Markets() {
   return (
-    <section id="trading-hub" className="relative py-24">
+    <section className="relative py-24">
       <div className="mx-auto max-w-7xl px-6">
         <motion.p
           initial={{ opacity: 0 }}
@@ -31,17 +31,10 @@ export default function Markets() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
               whileHover={{ scale: 1.02 }}
-              className="glass-card group flex items-center justify-between rounded-xl p-4 transition-all duration-300 md:p-5"
+              className="glass-card group rounded-xl p-5 text-center transition-all duration-300"
             >
-              <div>
-                <p className="text-sm font-semibold md:text-base">
-                  {market.name}
-                </p>
-                <p className="text-xs text-muted">{market.since}</p>
-              </div>
-              <span className="rounded-full bg-accent-green/10 px-3 py-1 text-xs font-semibold text-accent-green">
-                {market.gain}
-              </span>
+              <p className="text-lg font-semibold">{market.name}</p>
+              <p className="text-xs text-muted">{market.since}</p>
             </motion.div>
           ))}
         </div>

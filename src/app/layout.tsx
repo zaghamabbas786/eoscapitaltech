@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EOS Capital Tech — The AI Trading Edge You've Been Searching For",
+  title: "Eos Capital Tech — Prop Firm Automation, Engineered For You",
   description:
-    "Six years and $2M in R&D engineered into the definitive algorithmic software for passing challenges and scaling prop firm funding.",
+    "We build, code, and deploy professional trading systems in MQL4 & MQL5 — designed to trade your funded accounts on autopilot with institutional-grade risk management.",
   openGraph: {
-    title: "EOS Capital Tech",
+    title: "Eos Capital Tech",
     description:
-      "The AI trading edge engineered for passing prop firm challenges and scaling funded accounts.",
+      "Automated trading infrastructure for prop firm traders. Professional trading systems in MQL4 & MQL5.",
     type: "website",
   },
 };

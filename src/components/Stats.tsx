@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "1500+", label: "Funded Traders" },
-  { value: "$350M+", label: "Overall Funding", highlighted: true },
-  { value: "3.7x", label: "More Likely To Pass a Prop Firm\nChallenge vs. Industry Average" },
+  { value: "500+", label: "Accounts Automated" },
+  { value: "6+", label: "Proprietary Strategies", highlighted: true },
+  { value: "7+", label: "Prop Firms Supported" },
 ];
 
 export default function Stats() {
@@ -35,9 +35,7 @@ export default function Stats() {
               <p className="mb-2 text-4xl font-bold tracking-tight md:text-5xl">
                 {stat.value}
               </p>
-              <p className="text-sm leading-snug text-muted whitespace-pre-line">
-                {stat.label}
-              </p>
+              <p className="text-sm leading-snug text-muted">{stat.label}</p>
             </motion.div>
           ))}
         </motion.div>

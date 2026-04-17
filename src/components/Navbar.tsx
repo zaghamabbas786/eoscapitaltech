@@ -8,10 +8,9 @@ import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "#" },
-  { label: "About us", href: "#about" },
-  { label: "Product", href: "#products" },
-  { label: "White Paper", href: "#how-it-works" },
-  { label: "Blog", href: "#" },
+  { label: "Solutions", href: "#solutions" },
+  { label: "How It Works", href: "#how-it-works" },
+  { label: "Results", href: "#results" },
 ];
 
 export default function Navbar() {
@@ -26,9 +25,9 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         <Link href="#" className="flex items-center gap-2.5">
-          <Image src="/logo.png" alt="EOS Capital Tech" width={36} height={36} className="rounded-lg" />
+          <Image src="/logo.png" alt="Eos Capital Tech" width={36} height={36} className="rounded-lg" />
           <span className="text-lg font-semibold tracking-tight">
-            EOS Capital Tech
+            Eos Capital Tech
           </span>
         </Link>
 
@@ -54,10 +53,10 @@ export default function Navbar() {
             Login
           </Link>
           <Link
-            href="#pricing"
+            href="#book"
             className="rounded-full bg-accent px-5 py-2 text-sm font-medium text-white transition-all hover:bg-accent-light hover:shadow-lg hover:shadow-accent/25"
           >
-            See Demo
+            Book a Call
           </Link>
         </div>
 
@@ -100,11 +99,11 @@ export default function Navbar() {
                   Login
                 </Link>
                 <Link
-                  href="#pricing"
+                  href="#book"
                   onClick={() => setMobileOpen(false)}
                   className="flex-1 rounded-full bg-accent py-2.5 text-center text-sm font-medium text-white"
                 >
-                  See Demo
+                  Book a Call
                 </Link>
               </div>
             </div>

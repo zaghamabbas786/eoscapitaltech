@@ -8,8 +8,8 @@ import HowItWorks from "@/components/HowItWorks";
 import Benefits from "@/components/Benefits";
 import Markets from "@/components/Markets";
 import Testimonials from "@/components/Testimonials";
-import Guarantee from "@/components/Guarantee";
-import Pricing from "@/components/Pricing";
+import VideoTestimonials from "@/components/VideoTestimonials";
+import VerifiedResults from "@/components/VerifiedResults";
 import Disclosure from "@/components/Disclosure";
 import Footer from "@/components/Footer";
 
@@ -27,8 +27,8 @@ export default function Home() {
         <Benefits />
         <Markets />
         <Testimonials />
-        <Guarantee />
-        <Pricing />
+        <VideoTestimonials />
+        <VerifiedResults />
         <Disclosure />
       </main>
       <Footer />

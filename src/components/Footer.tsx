@@ -3,16 +3,16 @@ import Image from "next/image";
 
 const footerLinks = {
   Product: [
-    { label: "Titan AI", href: "#products" },
-    { label: "Titan Hedge", href: "#products" },
-    { label: "Leaderboard", href: "#products" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Custom EA Development", href: "#solutions" },
+    { label: "Proprietary Systems", href: "#products" },
+    { label: "MQL4 → MQL5 Conversion", href: "#solutions" },
+    { label: "VPS & Deployment", href: "#how-it-works" },
   ],
   Company: [
-    { label: "About Us", href: "#about" },
-    { label: "White Paper", href: "#" },
-    { label: "Blog", href: "#" },
-    { label: "Contact", href: "#contact" },
+    { label: "About Us", href: "#solutions" },
+    { label: "How It Works", href: "#how-it-works" },
+    { label: "Results", href: "#results" },
+    { label: "Contact", href: "#book" },
   ],
   Legal: [
     { label: "Privacy Policy", href: "#" },
@@ -24,19 +24,19 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer id="contact" className="border-t border-card-border/50 bg-card-bg/30 py-16">
+    <footer id="book" className="border-t border-card-border/50 bg-card-bg/30 py-16">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Link href="#" className="mb-4 flex items-center gap-2.5">
-              <Image src="/logo.png" alt="EOS Capital Tech" width={36} height={36} className="rounded-lg" />
+              <Image src="/logo.png" alt="Eos Capital Tech" width={36} height={36} className="rounded-lg" />
               <span className="text-lg font-semibold tracking-tight">
-                EOS Capital Tech
+                Eos Capital Tech
               </span>
             </Link>
             <p className="mb-6 max-w-sm text-sm leading-relaxed text-muted">
-              The AI trading edge engineered for passing prop firm challenges and
-              scaling funded accounts. Six years of R&D, one powerful system.
+              Automated trading infrastructure for prop firm traders. We build,
+              code, and deploy professional trading systems in MQL4 & MQL5.
             </p>
             <div className="flex gap-3">
               {["YouTube", "Twitter", "Discord"].map((social) => (
@@ -72,7 +72,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-card-border/50 pt-8 md:flex-row">
           <p className="text-xs text-muted">
-            © 2025 EOS Capital Tech Ltd. All rights reserved.
+            © 2026 Eos Capital Tech Ltd. All rights reserved.
           </p>
           <p className="text-xs text-muted">
             UK Registered Company · VAT Registered

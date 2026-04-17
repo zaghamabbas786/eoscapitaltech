@@ -1,45 +1,38 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Wallet,
-  Brain,
-  Bot,
-  BarChart3,
-  ShieldCheck,
-  Users,
-} from "lucide-react";
+import { Wallet, Brain, Bot, BarChart3, ShieldCheck, Users } from "lucide-react";
 
 const benefits = [
   {
     icon: Wallet,
-    title: "Trade Other's Money",
-    desc: "Access and trade prop firm capital without risking your own funds.",
+    title: "Trade Prop Firm Capital",
+    desc: "Access funded accounts without risking your own money. Our systems trade the firm's capital, you keep the profits.",
   },
   {
     icon: Brain,
     title: "Removes Human Error",
-    desc: "Titan X uses logic to prevent panic selling and revenge-trading.",
+    desc: "Our systems trade by rules. No panic selling. No revenge trades. No missed entries. Just systematic execution.",
   },
   {
     icon: Bot,
-    title: "Automated Trading",
-    desc: "You don't need to watch charts all day. The system runs automatically.",
+    title: "Fully Automated",
+    desc: "Your systems run 24/7 on a low-latency VPS. You don't need to watch charts, set alerts, or place trades manually.",
   },
   {
     icon: BarChart3,
-    title: "Validated Strategies",
-    desc: "Choose from strategies already performing across the community.",
+    title: "Proven Strategies",
+    desc: "Multiple in-house systems refined across hundreds of live accounts. Each built, tested, and battle-proven before deployment.",
   },
   {
     icon: ShieldCheck,
-    title: "Built-In Protection",
-    desc: "Risk controls designed to help prevent common challenge violations.",
+    title: "Built-In Risk Protection",
+    desc: "Drawdown monitoring, daily loss limits, and session filters engineered into every system. Built for prop firm compliance.",
   },
   {
     icon: Users,
-    title: "You Never Trade Alone",
-    desc: "Get matched with a success coach to guide you through the journey.",
+    title: "Dedicated Support",
+    desc: "UK-based operations team handling setup, monitoring, and ongoing optimisation. You're never alone.",
   },
 ];
 
@@ -57,7 +50,7 @@ export default function Benefits() {
             Benefits
           </span>
           <h2 className="mb-4 max-w-md text-3xl font-bold tracking-tight md:text-4xl">
-            Your Unfair Trading Edge
+            Why Clients Choose Eos Capital Tech
           </h2>
           <p className="max-w-lg text-muted">
             A rules-based system engineered to control risk, prevent errors, and

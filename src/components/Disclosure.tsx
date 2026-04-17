@@ -16,13 +16,12 @@ export default function Disclosure() {
           <div className="flex gap-3">
             <ShieldAlert size={20} className="mt-0.5 shrink-0 text-muted" />
             <p className="text-xs leading-relaxed text-muted">
-              <strong className="text-foreground/70">Disclosure:</strong> Results
-              vary and are not guaranteed. Trading involves risks and losses may
-              occur. Based on internal audit from 10,000 prop firm challenge
-              attempts, users were funded 27% of the time. The cost to obtain a
-              $100,000 funded account was $1,823. The average value of a funded
-              account was $4,810. Some testimonials may include small appreciation
-              tokens. All reflect genuine experiences.
+              Trading involves risk of loss and is not suitable for everyone.
+              Past performance is not indicative of future results. Eos Capital
+              Tech provides trading automation software and development services.
+              We do not provide financial advice. Funded account payouts are
+              subject to prop firm terms and conditions. Results shown reflect
+              individual client experiences and are not guaranteed.
             </p>
           </div>
         </motion.div>

@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { Clock, Building2, GitBranch, BarChart3 } from "lucide-react";
 
 const stats = [
-  { icon: Clock, value: "16+", label: "Years Experience", desc: "Deep trading and automation expertise." },
+  { icon: Clock, value: "30+", label: "Years Experience (Combined)", desc: "Deep trading and automation expertise." },
   { icon: Building2, value: "3+", label: "Years in Business", desc: "Focused exclusively on building automated systems." },
-  { icon: GitBranch, value: "11+", label: "Strategies", desc: "Independently structured across multiple market conditions." },
-  { icon: BarChart3, value: "4+", label: "Markets", desc: "Gold, Forex, Indices & Bitcoin." },
+  { icon: GitBranch, value: "6+", label: "Strategies", desc: "Independently structured across multiple market conditions." },
+  { icon: BarChart3, value: "4+", label: "Markets", desc: "Gold, Forex, Indices & Crypto." },
 ];
 
 export default function WhoWeAre() {
@@ -38,9 +38,9 @@ export default function WhoWeAre() {
           </h2>
 
           <p className="max-w-2xl text-lg leading-relaxed text-muted">
-            Not tips. Not signals. Fully automated, rules-based strategies
-            designed to grow capital systematically — across multiple markets,
-            around the clock.
+            Not tips. Not signals. Fully coded, rules-based Expert Advisors
+            engineered to trade your funded accounts systematically — across
+            multiple markets, around the clock.
           </p>
         </motion.div>
 
