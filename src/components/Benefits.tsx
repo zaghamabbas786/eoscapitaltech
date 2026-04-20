@@ -38,27 +38,27 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section className="relative py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="relative py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-12"
+          className="mb-10 sm:mb-12"
         >
           <span className="mb-4 block text-xs font-semibold tracking-[0.25em] text-accent uppercase">
             Benefits
           </span>
-          <h2 className="mb-4 max-w-md text-3xl font-bold tracking-tight md:text-4xl">
+          <h2 className="mb-4 max-w-md text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
             Why Clients Choose Eos Capital Tech
           </h2>
-          <p className="max-w-lg text-muted">
+          <p className="max-w-lg text-sm text-muted sm:text-base">
             A rules-based system engineered to control risk, prevent errors, and
             support long-term consistency.
           </p>
         </motion.div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
           {benefits.map((b, i) => (
             <motion.div
               key={b.title}
@@ -66,7 +66,7 @@ export default function Benefits() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
-              className="glass-card group rounded-2xl p-6 transition-all duration-300"
+              className="glass-card group rounded-2xl p-5 transition-all duration-300 sm:p-6"
             >
               <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-card-border bg-card-bg transition-colors group-hover:border-accent/30 group-hover:bg-accent/10">
                 <b.icon size={20} className="text-accent" />

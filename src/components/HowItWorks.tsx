@@ -51,29 +51,29 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative py-24">
+    <section id="how-it-works" className="relative py-16 sm:py-24">
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-0 top-0 h-[400px] w-[400px] rounded-full bg-accent/3 blur-[120px]" />
+        <div className="absolute left-0 top-0 h-[min(400px,95vw)] w-[min(400px,95vw)] rounded-full bg-accent/3 blur-[120px]" />
       </div>
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 text-center"
+          className="mb-12 text-center sm:mb-16"
         >
           <span className="mb-4 block text-xs font-semibold tracking-[0.25em] text-accent uppercase">
             How It Works
           </span>
-          <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
+          <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             From Strategy to Live Automation
           </h2>
-          <p className="mx-auto max-w-lg text-muted">
+          <p className="mx-auto max-w-lg px-1 text-sm text-muted sm:text-base">
             Five steps from your application to a fully automated funded account.
           </p>
         </motion.div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {steps.slice(0, 2).map((step, i) => (
             <motion.div
               key={step.num}
@@ -81,7 +81,7 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="glass-card rounded-2xl p-6"
+              className="glass-card rounded-2xl p-5 sm:p-6"
             >
               <span className="mb-4 inline-flex h-9 w-9 items-center justify-center rounded-lg border border-card-border font-mono text-sm font-bold text-muted">
                 {step.num}
@@ -99,12 +99,15 @@ export default function HowItWorks() {
                     Challenge Progress
                   </div>
                   {step.mockup.checks.map((check) => (
-                    <div key={check.label} className="flex items-center justify-between border-b border-card-border/50 py-2.5">
-                      <div className="flex items-center gap-2 text-xs">
-                        <span className="text-accent-green">✓</span>
-                        {check.label}
+                    <div
+                      key={check.label}
+                      className="flex flex-col gap-1 border-b border-card-border/50 py-2.5 last:border-b-0 sm:flex-row sm:items-center sm:justify-between sm:gap-2"
+                    >
+                      <div className="flex min-w-0 items-center gap-2 text-xs">
+                        <span className="shrink-0 text-accent-green">✓</span>
+                        <span className="break-words">{check.label}</span>
                       </div>
-                      <span className="text-xs font-medium text-accent-green">
+                      <span className="shrink-0 text-xs font-medium text-accent-green sm:text-right">
                         {check.status}
                       </span>
                     </div>
@@ -114,7 +117,7 @@ export default function HowItWorks() {
             </motion.div>
           ))}
 
-          <div className="flex flex-col gap-8 md:col-span-2 lg:col-span-1">
+          <div className="flex flex-col gap-6 sm:gap-8 md:col-span-2 lg:col-span-1">
             {steps.slice(2).map((step, i) => (
               <motion.div
                 key={step.num}
@@ -122,7 +125,7 @@ export default function HowItWorks() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: (i + 2) * 0.1 }}
-                className="glass-card rounded-2xl p-6"
+                className="glass-card rounded-2xl p-5 sm:p-6"
               >
                 <div className="flex items-start gap-4">
                   <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-card-border font-mono text-sm font-bold text-muted">

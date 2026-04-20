@@ -12,6 +12,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "Eos Capital Tech — Prop Firm Automation, Engineered For You",
   description:
@@ -35,7 +40,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body className="min-h-screen bg-background text-foreground">
+      <body className="min-h-screen overflow-x-clip bg-background text-foreground">
         {children}
       </body>
     </html>

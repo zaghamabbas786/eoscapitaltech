@@ -3,16 +3,16 @@
 import { motion } from "framer-motion";
 
 const markets = [
-  { name: "Gold", since: "Since Sept 2023" },
-  { name: "Forex", since: "Since May 2020" },
-  { name: "Indices", since: "Since Sept 2023" },
-  { name: "Crypto", since: "Since Oct 2023" },
+  { name: "Gold", since: "Sept 2023" },
+  { name: "Forex", since: "May 2020" },
+  { name: "Indices", since: "Sept 2023" },
+  { name: "Crypto", since: "Oct 2023" },
 ];
 
 export default function Markets() {
   return (
     <section className="relative py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      {/* <div className="mx-auto max-w-7xl px-6">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -48,7 +48,7 @@ export default function Markets() {
         >
           Systems designed for disciplined capital growth — not speculation.
         </motion.p>
-      </div>
+      </div> */}
     </section>
   );
 }

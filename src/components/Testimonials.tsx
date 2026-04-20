@@ -44,27 +44,27 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="results" className="relative py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section id="results" className="relative py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-12"
+          className="mb-10 sm:mb-12"
         >
           <span className="mb-4 block text-xs font-semibold tracking-[0.25em] text-accent uppercase">
             Real Clients, Real Results
           </span>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">
+          <h2 className="mb-4 text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
             What Our Clients Say
           </h2>
-          <p className="max-w-lg text-muted">
+          <p className="max-w-lg text-sm text-muted sm:text-base">
             These aren&apos;t promises or projections. Real traders who automated
             their funded accounts with our systems.
           </p>
         </motion.div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
           {testimonials.map((t, i) => (
             <motion.div
               key={t.name}
@@ -72,23 +72,23 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="glass-card flex flex-col rounded-2xl p-6"
+              className="glass-card flex flex-col rounded-2xl p-5 sm:p-6"
             >
-              <Quote size={20} className="mb-3 text-accent/40" />
+              <Quote size={20} className="mb-3 shrink-0 text-accent/40" />
               <p className="mb-5 flex-1 text-sm italic leading-relaxed text-muted">
                 &ldquo;{t.quote}&rdquo;
               </p>
-              <div className="flex items-center justify-between border-t border-card-border/50 pt-4">
-                <div className="flex items-center gap-3">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-full bg-accent/15 text-xs font-bold text-accent">
+              <div className="flex flex-col gap-3 border-t border-card-border/50 pt-4 sm:flex-row sm:items-center sm:justify-between sm:gap-2">
+                <div className="flex min-w-0 items-center gap-3">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent/15 text-xs font-bold text-accent">
                     {t.name.split(" ").map((n) => n[0]).join("")}
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm font-semibold">{t.name}</p>
                     <p className="text-xs text-muted">{t.role}</p>
                   </div>
                 </div>
-                <span className="rounded-full bg-accent/10 px-2.5 py-1 text-[10px] font-semibold tracking-wide text-accent">
+                <span className="w-fit shrink-0 rounded-full bg-accent/10 px-2.5 py-1 text-[10px] font-semibold tracking-wide text-accent">
                   {t.tag}
                 </span>
               </div>

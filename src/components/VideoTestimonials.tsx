@@ -19,26 +19,26 @@ const colors = [
 
 export default function VideoTestimonials() {
   return (
-    <section className="relative py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="relative py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-12"
+          className="mb-10 sm:mb-12"
         >
           <span className="mb-4 block text-xs font-semibold tracking-[0.25em] text-accent uppercase">
             See What Our Clients Have To Say
           </span>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">
+          <h2 className="mb-4 text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
             Video Testimonials
           </h2>
-          <p className="max-w-lg text-muted">
+          <p className="max-w-lg text-sm text-muted sm:text-base">
             Hear directly from our clients about their experience with Eos Capital Tech.
           </p>
         </motion.div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
           {videos.map((v, i) => (
             <motion.div
               key={v.name}
@@ -48,7 +48,7 @@ export default function VideoTestimonials() {
               transition={{ delay: i * 0.1 }}
             >
               <div
-                className={`group relative mb-3 flex h-48 cursor-pointer items-center justify-center rounded-xl bg-gradient-to-br ${colors[i % colors.length]} border border-card-border overflow-hidden transition-all hover:border-accent/30`}
+                className={`group relative mb-3 flex h-40 w-full cursor-pointer items-center justify-center rounded-xl bg-gradient-to-br sm:h-48 ${colors[i % colors.length]} border border-card-border overflow-hidden transition-all hover:border-accent/30`}
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/15 backdrop-blur-sm transition-transform group-hover:scale-110">
                   <Play size={20} className="ml-0.5 fill-white text-white" />

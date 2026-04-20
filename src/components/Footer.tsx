@@ -24,10 +24,10 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer id="book" className="border-t border-card-border/50 bg-card-bg/30 py-16">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
-          <div className="lg:col-span-2">
+    <footer id="book" className="border-t border-card-border/50 bg-card-bg/30 py-12 sm:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-12 lg:grid-cols-5">
+          <div className="sm:col-span-2 lg:col-span-2">
             <Link href="#" className="mb-4 flex items-center gap-2.5">
               <Image src="/logo.png" alt="Eos Capital Tech" width={36} height={36} className="rounded-lg" />
               <span className="text-lg font-semibold tracking-tight">
@@ -70,7 +70,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-card-border/50 pt-8 md:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-card-border/50 pt-8 text-center sm:mt-12 sm:flex-row sm:gap-4 sm:text-left">
           <p className="text-xs text-muted">
             © 2026 Eos Capital Tech Ltd. All rights reserved.
           </p>

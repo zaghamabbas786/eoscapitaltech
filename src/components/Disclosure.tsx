@@ -5,15 +5,15 @@ import { ShieldAlert } from "lucide-react";
 
 export default function Disclosure() {
   return (
-    <section className="py-16">
-      <div className="mx-auto max-w-4xl px-6">
+    <section className="py-12 sm:py-16">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="rounded-2xl border border-card-border/50 bg-card-bg/30 p-6"
+          className="rounded-2xl border border-card-border/50 bg-card-bg/30 p-5 sm:p-6"
         >
-          <div className="flex gap-3">
+          <div className="flex gap-3 sm:items-start">
             <ShieldAlert size={20} className="mt-0.5 shrink-0 text-muted" />
             <p className="text-xs leading-relaxed text-muted">
               Trading involves risk of loss and is not suitable for everyone.

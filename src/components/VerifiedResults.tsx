@@ -14,9 +14,9 @@ const results = [
 
 export default function VerifiedResults() {
   return (
-    <section className="py-20">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="flex flex-wrap justify-center gap-4">
+    <section className="py-14 sm:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="flex flex-col flex-wrap items-stretch justify-center gap-3 sm:flex-row sm:items-center sm:gap-4">
           {results.map((r, i) => (
             <motion.div
               key={r.name}
@@ -24,7 +24,7 @@ export default function VerifiedResults() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.4 }}
-              className="glass-card flex items-center gap-3 rounded-xl px-5 py-3"
+              className="glass-card flex w-full max-w-full items-center gap-3 rounded-xl px-4 py-3 sm:w-auto sm:max-w-none sm:px-5"
             >
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/15 text-xs font-bold text-accent">
                 {r.initials}
