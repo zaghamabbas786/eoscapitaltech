@@ -74,9 +74,9 @@ export default function Footer() {
           <p className="text-xs text-muted">
             © 2026 Eos Capital Tech Ltd. All rights reserved.
           </p>
-          <p className="text-xs text-muted">
+          {/* <p className="text-xs text-muted">
             UK Registered Company · VAT Registered
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>
