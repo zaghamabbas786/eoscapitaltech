@@ -5,40 +5,46 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "James R.",
-    role: "Engineer, London",
-    tag: "3 ACCOUNTS AUTOMATED",
-    quote: "Had a breakout strategy I'd been trading manually for years. They coded it into an EA and it's been running hands-off on my funded accounts ever since.",
+    name: "Pedro V",
+    role: "Spain",
+    tag: "INDUSTRY'S BEST",
+    quote:
+      "I'm being trading with EOS since March this year. I have tried multiple other services and none of them beat EOS. For me they are the best in the industry now and I can't recommend them highly enough.",
   },
   {
-    name: "Sarah M.",
-    role: "Nurse, Birmingham",
-    tag: "$100K FUNDED",
-    quote: "Zero trading experience. They set me up with their proprietary systems, installed everything on a VPS, and I got my first funded payout within 6 weeks.",
+    name: "Steven B",
+    role: "U.S",
+    tag: "PROP ACCOUNT SECURED",
+    quote:
+      "Thanks to their support, I was able to secure my initial funded trading account through a reputable proprietary firm. The entire process has been seamless, and I'm grateful for choosing EOS as my partner on this journey.",
   },
   {
-    name: "Daniel K.",
-    role: "Day Trader, Dubai",
-    tag: "MQL4 → MQL5 MIGRATION",
-    quote: "Needed my MT4 EAs converted to MT5 with proper risk management. They rebuilt the whole architecture — runs cleaner than the original.",
+    name: "Murat",
+    role: "UK",
+    tag: "$4K FIRST PAYOUT",
+    quote:
+      "Chuffed to say the least as I've been struggling for the last 6 months on my own buying and failing challenges. My account was passed as promised! I received my first 4k payout using the system in my first month. Highly recommend service",
   },
   {
-    name: "Marcus T.",
-    role: "Entrepreneur, Manchester",
-    tag: "$250K ACROSS 2 FIRMS",
-    quote: "The risk controls sold me. Drawdown protection, daily loss limits, session filters — all baked into the system. My accounts have never been safer.",
+    name: "Emilia R",
+    role: "UK",
+    tag: "STABLE & PRACTICAL",
+    quote:
+      "What impressed me most was that they had a practical mentality. They did not promise things that are unrealistic and instead concentrated on developing tools that are stable and efficient. The team is well knowledgeable in technical side of automated trading.",
   },
   {
-    name: "Ryan J.",
-    role: "Business Owner, Bristol",
-    tag: "$400K FUNDED",
-    quote: "Running their systems across 4 FTMO accounts. Steady returns, no violations, completely automated. Best investment I've made.",
+    name: "Onos O",
+    role: "U.S",
+    tag: "DELIVERED AS PROMISED",
+    quote:
+      "EOS capital delivered as promised. Account passed, payout secured. A big thank you to Han for all the support and guidance. Their risk management is topnotch prioritizing account safety over quick gains.\nThank you so much Han.",
   },
   {
-    name: "Ahmed H.",
-    role: "Trader, Birmingham",
-    tag: "CUSTOM EA BUILT",
-    quote: "Had an idea for a multi-timeframe gold strategy but couldn't code it. They built it in under two weeks. Now it runs 24/7 on autopilot.",
+    name: "Bruno T",
+    role: "UK",
+    tag: "TRUST & CLARITY",
+    quote:
+      "Proper communication was upheld during the whole engagement. Responses to questions were quick and regular updates were made on the progress. The openness in the clarification of the capabilities and restrictions gave the feeling of trust and professionalism.",
   },
 ];
 
@@ -75,7 +81,7 @@ export default function Testimonials() {
               className="glass-card flex flex-col rounded-2xl p-5 sm:p-6"
             >
               <Quote size={20} className="mb-3 shrink-0 text-accent/40" />
-              <p className="mb-5 flex-1 text-sm italic leading-relaxed text-muted">
+              <p className="mb-5 flex-1 whitespace-pre-line text-sm italic leading-relaxed text-muted">
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="flex flex-col gap-3 border-t border-card-border/50 pt-4 sm:flex-row sm:items-center sm:justify-between sm:gap-2">
