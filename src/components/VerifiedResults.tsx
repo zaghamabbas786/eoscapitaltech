@@ -14,7 +14,7 @@ const results = [
 
 export default function VerifiedResults() {
   return (
-    <section className="py-14 sm:py-20">
+    <section >
       {/* <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex flex-col flex-wrap items-stretch justify-center gap-3 sm:flex-row sm:items-center sm:gap-4">
           {results.map((r, i) => (
