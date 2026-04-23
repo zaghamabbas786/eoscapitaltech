@@ -1,12 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
+import { CALENDLY_BOOK_URL } from "@/constants/site";
 
-const footerLinks = {
+type FooterLink = { label: string; href: string; external?: boolean };
+
+const footerLinks: Record<string, FooterLink[]> = {
   Company: [
     { label: "About Us", href: "#solutions" },
     { label: "How It Works", href: "#how-it-works" },
     { label: "Results", href: "#results" },
-    { label: "Contact", href: "#book" },
+    { label: "Contact", href: CALENDLY_BOOK_URL, external: true },
   ],
   Legal: [
     { label: "Privacy Policy", href: "/privacy-policy" },
@@ -53,6 +56,8 @@ export default function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
+                      target={link.external ? "_blank" : undefined}
+                      rel={link.external ? "noopener noreferrer" : undefined}
                       className="text-sm text-muted transition-colors hover:text-foreground"
                     >
                       {link.label}

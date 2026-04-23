@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { CALENDLY_BOOK_URL } from "@/constants/site";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -53,7 +54,9 @@ export default function Navbar() {
             Login
           </Link>
           <Link
-            href="#book"
+            href={CALENDLY_BOOK_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-accent px-5 py-2 text-sm font-medium text-white transition-all hover:bg-accent-light hover:shadow-lg hover:shadow-accent/25"
           >
             Book a Call
@@ -99,7 +102,9 @@ export default function Navbar() {
                   Login
                 </Link>
                 <Link
-                  href="#book"
+                  href={CALENDLY_BOOK_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
                   className="flex-1 rounded-full bg-accent py-2.5 text-center text-sm font-medium text-white"
                 >

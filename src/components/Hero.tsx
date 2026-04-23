@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { CALENDLY_BOOK_URL } from "@/constants/site";
 
 const trustBadges = [
   {
@@ -79,7 +80,9 @@ export default function Hero() {
           className="mx-auto flex w-full max-w-md flex-col gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4"
         >
           <motion.a
-            href="#book"
+            href={CALENDLY_BOOK_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all hover:bg-accent-light hover:shadow-xl hover:shadow-accent/30 sm:w-auto sm:px-8"
