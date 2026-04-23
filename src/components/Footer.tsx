@@ -2,12 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const footerLinks = {
-  Product: [
-    { label: "Custom EA Development", href: "#solutions" },
-    { label: "Proprietary Systems", href: "#products" },
-    { label: "MQL4 → MQL5 Conversion", href: "#solutions" },
-    { label: "VPS & Deployment", href: "#how-it-works" },
-  ],
   Company: [
     { label: "About Us", href: "#solutions" },
     { label: "How It Works", href: "#how-it-works" },
@@ -15,10 +9,10 @@ const footerLinks = {
     { label: "Contact", href: "#book" },
   ],
   Legal: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Risk Disclosure", href: "#" },
-    { label: "Cookie Policy", href: "#" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms & Conditions", href: "/terms" },
+    { label: "Risk Disclosure", href: "/risk-disclosure" },
+    { label: "Cookie Policy", href: "/cookie-policy" },
   ],
 };
 
@@ -26,10 +20,10 @@ export default function Footer() {
   return (
     <footer id="book" className="border-t border-card-border/50 bg-card-bg/30 py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-12 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-2">
-            <Link href="#" className="mb-4 flex items-center gap-2.5">
-              <Image src="/logo.png" alt="Eos Capital Tech" width={36} height={36} className="rounded-lg" />
+            <Link href="/" className="mb-4 flex items-center gap-2.5">
+              <Image src="/logo.png" alt="EOS Capital Tech logo" width={36} height={36} className="rounded-lg" />
               <span className="text-lg font-semibold tracking-tight">
                 Eos Capital Tech
               </span>

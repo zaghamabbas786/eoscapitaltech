@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Home", href: "#" },
+  { label: "Home", href: "/" },
   { label: "Solutions", href: "#solutions" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Results", href: "#results" },
@@ -24,7 +24,7 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 border-b border-card-border/50 bg-background/80 backdrop-blur-xl"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
-        <Link href="#" className="flex min-w-0 items-center gap-2 sm:gap-2.5">
+        <Link href="/" className="flex min-w-0 items-center gap-2 sm:gap-2.5">
           <Image src="/logo.png" alt="Eos Capital Tech" width={36} height={36} className="shrink-0 rounded-lg" />
           <span className="truncate text-base font-semibold tracking-tight sm:text-lg">
             Eos Capital Tech
